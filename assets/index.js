@@ -4,7 +4,6 @@ function paintBars() {
     fetch('assets/data.json')
         .then(a => a.json())
         .then(b => {
-            console.log(b)
             
             b.forEach(element => {
             bars.innerHTML += `
@@ -22,22 +21,22 @@ function paintBars() {
 }
 
 
-
-
 paintBars();
 
 setTimeout(() => {
         const individualBars = document.querySelectorAll('.individual-bar');
-
+         console.log(individualBars)
         individualBars.forEach(ele => {
             ele.addEventListener('mouseover' , (e) => {
                 e.path[1].childNodes[1].classList.remove('hidden')
+                console.log(e)
             })
         })
 
         individualBars.forEach(ele => {
             ele.addEventListener('mouseout' , (e) => {
                 e.path[1].childNodes[1].classList.add('hidden')
+                console.log(e)
             })
         })
     },100)
