@@ -4,7 +4,7 @@
     --subtitle-color: rgb(160, 154, 146);
 }
 
-@import url('https://fonts.google.com/specimen/DM+Sans');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
 
 *{
     margin: 0;
@@ -19,7 +19,7 @@ body{
     display: grid;
     place-content: center;
     height: 100vh;
-    font-family: myFirstFont;
+    font-family: 'DM Sans', sans-serif;
 }
 
 main.container{
@@ -32,7 +32,7 @@ main.container{
     justify-content: end;
 }
 .image{
-    width: 70%;
+    width: 60%;
 }
 
 header.balance-header{
@@ -46,7 +46,8 @@ header.balance-header{
 }
 
 .header-title{
-    font-size: 13px;
+    font-size: 10px;
+    font-weight: 300;
     color: rgb(250, 233, 229);
     margin-bottom: 7px;
 }
@@ -76,6 +77,7 @@ section{
 
 .grafic-title{
     color: var(--secondary-color);
+    font-size: 12px;
 }
 
 .small-letters{
@@ -136,9 +138,9 @@ section{
 .grafic-bars-price{
     background-color: rgb(58, 41, 26);
     color: white;
-    /* height: 20px; */
-    padding: 2px;
+    padding: 4px;
     font-size: 7px;
+    font-weight: bold;
     margin-bottom: 5px;
     border-radius: 3px;
 }
