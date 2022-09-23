@@ -1,7 +1,7 @@
 const bars = document.querySelector('.grafic-bars');
 
 function paintBars() {
-    fetch('/assets/data.json')
+    fetch('assets/data.json')
         .then(a => a.json())
         .then(b => {
             console.log(b)
