@@ -1,0 +1,148 @@
+:root{
+    --primary-color: rgb(225, 116, 96);
+    --secondary-color: rgb(53, 39, 28);
+    --subtitle-color: rgb(160, 154, 146);
+}
+
+@import url('https://fonts.google.com/specimen/DM+Sans');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    background-color:rgb(245, 233, 219);
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    font-family: myFirstFont;
+}
+
+main.container{
+    max-width: 500px;
+    width: 100%;
+}
+
+.logo{
+    display: flex;
+    justify-content: end;
+}
+.image{
+    width: 70%;
+}
+
+header.balance-header{
+    display: flex;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    justify-content: space-between;
+    padding: 15px;
+    margin-bottom: 17px;
+    color: rgb(230, 230, 230);
+}
+
+.header-title{
+    font-size: 13px;
+    color: rgb(250, 233, 229);
+    margin-bottom: 7px;
+}
+
+.amount{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.balance-container{
+    display: grid;
+    place-content: center;
+}
+
+section{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+.grafic-amount{
+    display: flex;
+    justify-content:space-between;
+    margin: 15px 0 0 0;
+}
+
+.grafic-title{
+    color: var(--secondary-color);
+}
+
+.small-letters{
+    font-size: 10px;
+    color: var(--subtitle-color);
+    font-weight: 400;
+}
+
+.porcento{
+    font-size: 10px;
+    color: var(--secondary-color);
+}
+
+.porcentage-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: end;
+}
+
+.individual-bar{
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.individual-bar:hover{
+    opacity: 80%;
+}
+
+.grafic-bars{
+    display: flex;
+    gap: 10px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.grafic-bars-days{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.total{
+    color: var(--secondary-color);
+    font-size: 28px;
+    font-weight: 800;
+    margin-top: 5px;
+}
+
+.separator{
+    width: 100%;
+    height: 1px;
+    background-color: rgb(241, 236, 226);
+}
+
+.grafic-bars-price{
+    background-color: rgb(58, 41, 26);
+    color: white;
+    /* height: 20px; */
+    padding: 2px;
+    font-size: 7px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+}
+
+.hidden{
+    display: none;
+}
