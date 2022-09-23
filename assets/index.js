@@ -1,9 +1,10 @@
 const bars = document.querySelector('.grafic-bars');
 
 function paintBars() {
-    fetch('../data.json')
+    fetch('/assets/data.json')
         .then(a => a.json())
         .then(b => {
+            console.log(b)
             
             b.forEach(element => {
             bars.innerHTML += `
